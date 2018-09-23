@@ -1,0 +1,20 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/hero-bg.jpg');
+  background-size: cover;
+  color: $white;
+
+  &__desc {
+    max-width: 720px;
+
+    &__icon {
+      vertical-align: middle;
+      margin-right: 0.8rem;
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/// Font Declarations
+// --------------
+$font-primary:			"Open Sans", sans-serif;
+$font-secondary:		"Dancing Script", cursive;
+$font-tertiary:     "Raleway", sans-serif;
+
+
+// Colours
+// --------------
+
+$white:   #fff;
+$black:   #000;
+$orange:  #f14814;
+$yellow:  #ffad1e;
+
+// Website colors
+// ---------------
+
+$primary-color:   $orange;
+$secondary-color: $yellow;
+// $tertiary-color: $black;
+
+
+// Media Query Breakpoints
+// --------------
+
+$mq-largest: 1440px;
+$mq-large:   1024px;
+$mq-medium:  767px;
+$mq-small:   425px

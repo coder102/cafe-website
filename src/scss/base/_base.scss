@@ -1,0 +1,9 @@
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: $primary-color;
+  color: $white;
+}

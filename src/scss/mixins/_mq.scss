@@ -1,0 +1,61 @@
+/// $MEDIA QUERY
+
+@mixin mq($viewports, $constraint1: max, $constraint2: width) {
+
+	// Set default variables
+	$min: min-#{$constraint2};
+	$max: max-#{$constraint2};
+
+	@if(type-of($viewports) == number) {
+
+		@media screen and (#{$constraint1}-#{$constraint2}: $viewports) {
+			@content;
+		}
+
+	} @else {
+
+		@media screen and ($min: nth($viewports, 1)) and ($max: nth($viewports, 2)) {
+			@content;
+		}
+
+	}
+
+}
+
+// USAGE:
+//
+// ---- for max-width media query ----
+//
+//  @include mq(1080px) {
+//      display:none;
+//  }
+//
+// ---- for min-width media query ----
+//
+//  @include mq(1080px, min) {
+//      display:none;
+//  }
+//
+// ---- OR for min-max ----
+//
+// @include mq((700px, 780px)) {
+//     display:block;
+// }
+//
+// ---- for max-height media query ----
+//
+//  @include mq(1080px, max, height) {
+//      display:none;
+//  }
+//
+// ---- for min-height media query ----
+//
+//  @include mq(1080px, min, height) {
+//      display:none;
+//  }
+//
+// ---- for min-max height media query ----
+//
+//  @include mq((700px, 780px), null, height) {
+//      display:none;
+//  }
