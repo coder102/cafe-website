@@ -4,12 +4,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   color: $white;
 
   &__desc {
     max-width: 720px;
+    padding: 0 15px;
+    color: $white;
+    font-size: 1.6rem;
 
     &__icon {
       vertical-align: middle;

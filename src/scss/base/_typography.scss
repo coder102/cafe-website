@@ -5,22 +5,24 @@ html {
 
 h1 {
   font-size: 7em;
-  font-family: $font-secondary
+  font-family: $font-secondary;
 }
 
 h2 {
   font-size: 6rem;
-  font-family: $font-secondary
+  font-family: $font-secondary;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: $font-tertiary;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-family: $font-tertiary;
+  color: $tertiary-color;
 }

@@ -1,0 +1,13 @@
+.menu-heading {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)),
+      url('../img/our-menu-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $white;
+
+  &__icon {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin: -5px 5px 0;
+  }
+}

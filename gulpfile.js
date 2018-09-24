@@ -32,7 +32,7 @@ gulp.task('sass', function() {
             cascade: false
         }))
     .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
       stream: true
     }));
@@ -55,7 +55,7 @@ gulp.task('js', function () {
   }))
   .pipe(uglify())
   .pipe(concat('script.min.js'))
-  .pipe(gulp.dest('public'))
+  .pipe(gulp.dest('public/js'))
   .pipe(browserSync.reload({
     stream: true
   }))
